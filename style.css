@@ -1,0 +1,129 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-dark-grey: #4d4d4d;
+  --color-dark-slate-gray: #373c45;
+  --color-blue: #73aace;
+  --color-steel-blue: #377dba;
+  --color-yellow: #fff7d1;
+  --color-dark-yellow: #fbbf23;
+  --color-orange: #feb546;
+  --color-black: #000000;
+  --color-green: #20b2aa;
+  --color-purple: #9477af;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+}
+
+/* Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--color-dark-slate-gray);
+}
+
+/* Container */
+.container {
+  width: 400px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo__img {
+  width: 70px;
+}
+
+/* Categories */
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.categories img {
+  width: 40px;
+}
+
+.categorylist {
+}
+
+.categorylist #blue {
+  background-color: var(--color-steel-blue);
+  padding: 10px;
+}
+.categorylist #yellow {
+  background-color: var(--color-dark-yellow);
+  padding: 10px;
+}
+.categorylist #pink {
+  background-color: var(--color-pink);
+  padding: 10px;
+}
+
+/* Items */
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  margin: 4px;
+  padding: 4px 8px;
+}
+
+.item img {
+  width: 30px;
+  margin-right: 18px;
+}
