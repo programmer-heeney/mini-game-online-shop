@@ -72,6 +72,7 @@ body {
 .logo {
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 #logo__img {
@@ -84,25 +85,33 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0;
+}
+
+.categorylist button {
+  font-weight: var(--weight-semi-bold);
+  padding: 0;
+}
+
+.categorylist button:hover {
+  transform: scale(1.2);
 }
 
 .categories img {
   width: 40px;
 }
 
-.categorylist {
-}
-
 .categorylist #blue {
   background-color: var(--color-steel-blue);
   padding: 10px;
 }
+
 .categorylist #yellow {
   background-color: var(--color-dark-yellow);
   padding: 10px;
 }
+
 .categorylist #pink {
   background-color: var(--color-pink);
   padding: 10px;
@@ -123,6 +132,10 @@ body {
   background-color: var(--color-white);
   margin: 4px;
   padding: 4px 8px;
+}
+
+.item.invisible {
+  display: none;
 }
 
 .item img {

@@ -16,37 +16,73 @@
   <body>
     <section class="container">
       <!-- Logo -->
-      <section class="logo">
+      <button class="logo">
         <img id="logo__img" src="imgs/logo.png" />
-      </section>
+      </button>
       <!-- Categories -->
       <ul class="categories">
         <li class="categorylist">
-          <button><img src="imgs/blue_t.png" /></button>
+          <button id="t" data-category="t">
+            <img src="imgs/blue_t.png" />
+          </button>
         </li>
         <li class="categorylist">
-          <button><img src="imgs/blue_p.png" /></button>
+          <button id="p" data-category="p">
+            <img src="imgs/blue_p.png" />
+          </button>
         </li>
         <li class="categorylist">
-          <button><img src="imgs/blue_s.png" /></button>
+          <button id="s" data-category="s">
+            <img src="imgs/blue_s.png" />
+          </button>
         </li>
-        <li class="categorylist"><button id="blue">Blue</button></li>
-        <li class="categorylist"><button id="yellow">Yellow</button></li>
-        <li class="categorylist"><button id="pink">Pink</button></li>
+        <li class="categorylist">
+          <button id="blue" data-category="blue">Blue</button>
+        </li>
+        <li class="categorylist">
+          <button id="yellow" data-category="yellow">Yellow</button>
+        </li>
+        <li class="categorylist">
+          <button id="pink" data-category="pink">Pink</button>
+        </li>
       </ul>
       <!-- Items -->
       <ul class="items">
-        <li class="item">
+        <li class="item" data-color="blue" data-type="p">
           <img class="item__icon" src="imgs/blue_p.png" />
-          <p class="item__name">man, small size</p>
+          <p class="item__name">male, small size</p>
         </li>
-        <li class="item">
+        <li class="item" data-color="yellow" data-type="p">
           <img class="item__icon" src="imgs/yellow_p.png" />
-          <p class="item__name">man, small size</p>
+          <p class="item__name">female, large size</p>
         </li>
-        <li class="item">
+        <li class="item" data-color="pink" data-type="p">
           <img class="item__icon" src="imgs/pink_p.png" />
-          <p class="item__name">man, small size</p>
+          <p class="item__name">female, small size</p>
+        </li>
+        <li class="item" data-color="blue" data-type="t">
+          <img class="item__icon" src="imgs/blue_t.png" />
+          <p class="item__name">female, large size</p>
+        </li>
+        <li class="item" data-color="yellow" data-type="t">
+          <img class="item__icon" src="imgs/yellow_t.png" />
+          <p class="item__name">male, small size</p>
+        </li>
+        <li class="item" data-color="pink" data-type="t">
+          <img class="item__icon" src="imgs/pink_t.png" />
+          <p class="item__name">male, small size</p>
+        </li>
+        <li class="item" data-color="blue" data-type="s">
+          <img class="item__icon" src="imgs/blue_s.png" />
+          <p class="item__name">male, large size</p>
+        </li>
+        <li class="item" data-color="yellow" data-type="s">
+          <img class="item__icon" src="imgs/yellow_s.png" />
+          <p class="item__name">female, small size</p>
+        </li>
+        <li class="item" data-color="pink" data-type="s">
+          <img class="item__icon" src="imgs/pink_s.png" />
+          <p class="item__name">female, large size</p>
         </li>
       </ul>
     </section>
