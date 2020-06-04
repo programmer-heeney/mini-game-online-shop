@@ -1,24 +1,27 @@
 "use strict";
-// Create a Single item Dynamically Using JS
-const ul = document.createElement("ul");
-const li = document.createElement("li");
-const img = document.createElement("img");
-const p = document.createElement("p");
-const itemsContainer = document.querySelector(".items__container");
+import { itemData } from "./data.js";
 
-itemsContainer.append(ul);
-li.append(img);
-li.append(p);
-ul.append(li);
+const buildItemCard = (item) => {
+  // Create a Single item Dynamically Using JS
+  const li = document.createElement("li");
+  const img = document.createElement("img");
+  const p = document.createElement("p");
+  const itemsList = document.querySelector(".items");
 
-p.innerText = "male, small size";
-ul.setAttribute("calss", "items");
-li.setAttribute("class", "item");
-li.setAttribute("data-color", "blue");
-li.setAttribute("data-type", "p");
-img.setAttribute("class", "item__icon");
-img.setAttribute("src", "imgs/blue_p.png");
-p.setAttribute("class", "item__name");
+  // Append newly created elements into the DOM
+  li.append(img);
+  li.append(p);
+  itemsList.append(li);
+
+  // Set content and attributes
+  p.innerText = `${item.sex}, ${item.size}`;
+  li.setAttribute("class", "item");
+  li.setAttribute("data-color", item.color);
+  li.setAttribute("data-type", item.type);
+  img.setAttribute("src", item.icon);
+};
+
+itemData.forEach((item) => buildItemCard(item));
 
 // Handle click on buttons on category
 const categories = document.querySelectorAll(".categories");
