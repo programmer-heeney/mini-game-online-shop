@@ -89,6 +89,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0;
+  padding-right: 6px;
 }
 
 .categorylist button {
